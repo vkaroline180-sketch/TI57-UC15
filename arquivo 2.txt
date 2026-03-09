@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 arquivo criado no vscode
+=======
+arquivo criado no vscode
+>>>>>>> 78d1c1827a6c5f8317c22cff776d0d7dba5bf762

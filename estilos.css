@@ -1,0 +1,37 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Pacifico&display=swap');
+
+p{color: rgb(2, 243, 243);}
+
+    /* background-color: #66494959; */ pra mundar a cor de fundo do parágrafo, mas nesse caso, como a imagem de fundo é escura, a cor do parágrafo não fica tão visível. O ideal é usar uma cor de fundo mais clara ou ajustar a opacidade da imagem de fundo.
+ h1,h2,h3,h4,h5,h6{
+    color:rgb(36, 222, 231);
+}
+
+body{
+background-color: rgb(11, 255, 255);
+background-image: url("midias/imagem\ de\ fundo.jpg");
+background-size: cover;
+background-size: contain;
+background-size: auto;
+background-attachment: fixed;
+/*background-size: no-repeat;*/ é para não repetir a imagem, mas nesse caso, como a imagem é pequena, ela se repete. O ideal é usar o cover ou contain, dependendo do resultado desejado.
+}
+/* /* /*Tipografia/* */
+@font-face {
+    font-family: 'Lastchristmas';
+    src: url(fontes/Lastchristmas_personal_use_only.ttf);
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: underline;
+text-shadow: 0 0 8px rgba(76, 20, 206, 0.548);
+P{
+    font-size: 16px;
+    font-size: 24px;
+    font-size: 32px;
+
+}
+a{color:oklch(70.221% 0.10372 207.365);}
