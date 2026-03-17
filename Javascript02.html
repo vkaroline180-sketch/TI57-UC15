@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de JavaScript</title>
+</head>
+<body>
+    <h1>Mensagem via JavaScript</h1>
+    <h2>Via inserção</h2>
+    <p id="msg01"></p>
+    <button onclick="document.getElementById('msg01').innerText = 'mensagem inserida via JavaScript!'">Inserir Mensagem</button>
+    
+    <h2>Via alerta</h2>
+    <button onclick="alert('Mensagem exibida via alerta!')">exibir alerta</button>"
+     
+    <h2>Via console</h2>
+    <button onclick="console.log ('Mensagem exibida via console!')">exibir no console</button>
+    <h2>Via escrita direta</h2>
+    <button onclick="document.write('mensagem estrita diretamente via Javascript!')">Escrever Diretamente</button>
+
+<h2>Via prompt</h2>
+<button onclick="prompt('Digite uma mensagem:')">exibir prompt</button>
+
+<h1> Variaveis em JavaScript</h1>
+<button onclick="mensagem()">Exibir Variável</button>
+<script>
+
+    function mensagem(){
+    let nome;
+    nome = prompt('Digite seu nome:');
+    alert("Bom dia Linda " + nome + "!") ;
+}
+
+
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de JavaScript</title>
+</head>
+<body>
+    <h1>Exemplos de JavaScript</h1>
+    <h2>Alterando o conteúdo de um elemento</h2>
+
+    <p id="mensagem01"></p>
+    
+    <h3> Via seletor script </h3>
+    <script>
+    document.getElementById('mensagem01').innerText = "Olá, Mundo!";
+    </script>
+
+<h3>Via atributo onclick</h3>
+<button onclick="document.getElementById('mensagem01').innerText= 'Olá mundo via onclick!';">Clique aqui</button>
+
+<h3>via atributo função</h3>
+<button onclick="exibirMensagem()">clique aqui</button>
+
+<script>
+    function exibirMensagem() {
+        document.getElementById("mensagem01").innerText = "olá mundo via função!";
+    }
+</script>
+
+<h3>Via arquivo Externo</h3>
+<button onclick="exibirMensagemExterna()">clique aqui</button>
+<script src="js scripts.js"></script>
+
+<h2>Alterando um atributo</h2>
+<button onclick="Liga()">Liga</button>
+<img src="midias/off.gif" alt="Lâmpada" id="lamp">
+
+<script>
+function Liga() {
+    document.getElementById('lamp').src = 'midias/on.gif';
+}
+
+</script>
+<button onclick="desliga()">desliga</button>
+
+<script>
+function desliga() {
+    document.getElementById('lamp').src = 'midias/off.gif';
+}
+
+</script>
+
+<h3>Ligar e desligar com alternância</h3>
+<button onclick="alternarLampada()">Ligar/Desligar</button>
+
+<script>
+let ligada = false;
+function alternarLampada() {
+    const lamp = document.getElementById('lamp');
+    if (ligada) {
+        lamp.src = 'midias/off.gif';
+    } else {
+        lamp.src = 'midias/on.gif';
+    }
+    ligada = !ligada;
+}
+</script>
+
+<h2>Alterando a formatação</h2>
+<button onclick="formata()">Rosê</button>
+<script>
+   function formata() {
+    document.getElementById('mensagem01').style.color = 'pink';
+   }
+
+</script>
+<button onclick="temaEscuro()">Ativar/Desativar Tema Escuro</button>
+<script>
+let escuro = false;
+function temaEscuro() {
+    if (!escuro) {
+        document.body.style.backgroundColor = "#222";
+        document.body.style.color = "#fff";
+        escuro = true;
+    } 
+    
+    else {
+        document.body.style.backgroundColor = "#fff";
+        document.body.style.color = "#000";
+        escuro = false;
+    }
+}
+</script>
+</body>
+</html>
